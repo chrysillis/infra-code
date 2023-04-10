@@ -1,7 +1,8 @@
 # infra-code
 Infrastructure as Code with Terraform
 
-This repository will contain complete code to build out different servers with roles that require only minimal changes to be ready for your organization.
+This repository will contain Terraform configuration files that can build out different servers with their roles already installed.
+You will need to make some changes to the variables.tf files for your needs.
 
 List of servers and roles:
 OS | Roles | Link
