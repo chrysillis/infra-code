@@ -1,3 +1,4 @@
+# Version v1.1
 terraform {
   required_providers {
     azurerm = {
@@ -122,9 +123,12 @@ resource "azurerm_virtual_machine_extension" "roles_install" {
 
   settings = <<SETTINGS
     {
-      "commandToExecute": "powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name AD-Domain-Services, DNS –IncludeAllSubFeature -IncludeManagementTools"
+      "commandToExecute": "powershell -ExecutionPolicy Unrestricted Install-WindowsFeature -Name AD-Domain-Services, DNS -IncludeAllSubFeature -IncludeManagementTools"
     }
   SETTINGS
+  timeouts {
+    delete = "10m"
+  }
 }
 # Generate random text for a unique storage account name
 resource "random_id" "random_id" {
