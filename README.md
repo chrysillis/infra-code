@@ -7,4 +7,4 @@ You will need to make some changes to the variables.tf files for your needs.
 List of servers and roles:
 OS | Roles | Link
 --- | --- | ---
-Windows Server 2022 | Domain Controller | [Code](https://github.com/chrysillis/infra-code/tree/main/windows-domain-controller)
+Windows Server 2022 | Domain Controller | [Code](/windows-domain-controller)
