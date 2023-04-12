@@ -1,4 +1,4 @@
-# terrafom
+# Terrafom
 Infrastructure as Code with Terraform
 
 This repository will contain Terraform configuration files that can build out different servers with their roles already installed.
